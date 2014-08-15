@@ -20,7 +20,7 @@ var (
 	graphFilename = flag.String("graph", "", "a file containing the graph to cluster")
 	basic         = flag.Bool("basic", false, "show basic whole-graph statistics such as number of clusters and nodes")
 	advanced      = flag.Bool("advanced", false, "show advanced whole-graph statistics such as average cost metrics")
-	clusters      = flag.String("clusters", "all", "comma-separated list of clusters to perform cluster-specific analysis on, or \"all\"")
+	clusters      = flag.String("clusters", "", "comma-separated list of clusters to perform cluster-specific analysis on, or \"all\"")
 	basicCluster  = flag.Bool("basicCluster", false, "show basic statistics for each cluster such as number of nodes and border nodes")
 	maxCost       = flag.Bool("maxCost", false, "compute the MaxCost metric for each cluster and the advanced statistics")
 )
